@@ -1,10 +1,12 @@
 package classes;
 
 import enums.Gender;
+import interfaces.DriverSrevice;
 
 import java.math.BigDecimal;
+import java.util.List;
 
-public class Driver {
+public class Driver implements DriverSrevice {
     private Long id;
     private String name;
     private String surname;
@@ -100,6 +102,46 @@ public class Driver {
                 ", license=" + license +
                 ", money=" + money +
                 ", taxi=" + taxi + '}';
+
+    }
+
+    @Override
+    public Driver add(Driver driver) {
+        return null;
+    }
+
+    @Override
+    public List<Driver> add(List<Driver> drivers) {
+        return null;
+    }
+
+    @Override
+    public Driver findById(Long id) {
+        return null;
+    }
+
+    @Override
+    public List<Driver> findByName(String name) {
+        return null;
+    }
+
+    @Override
+    public String assignTaxiToDriver(String taxiName, Long driverId) {
+        return null;
+    }
+
+    @Override
+    public String changeTaxiOrDriver(Long driverId, Long taxiId) {
+        return null;
+    }
+
+    @Override
+    public List<Driver> getDriverByTaxiModel(String model) {
+        return null;
+    }
+
+    @Override
+    public void update(String driverName) {
 
     }
 }
